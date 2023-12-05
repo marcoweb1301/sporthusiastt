@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basket</title>
+    <link rel="stylesheet" href="css/style_futsal.css" />
+    <link rel="shortcut icon" href="logotitle.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <center>
+      <div class="formulir">
+        <center><h1 style="font-family: 'Bakbak One', cursive">Silahkan isi data anda di bawah ini !</h1></center>
+        <label for="name">Nama:</label>
+        <input type="text" id="form_nama" placeholder="Masukkan nama..." /><br /><br />
+        <label for="lokasi">Cari apa ?</label>
+        <select name="lokasi kebutuhan" id="select_kebutuhan">
+          <option value="carilapangan">Cari lapangan</option>
+          <option value="cariteman">Cari teman</option>
+          <option value="cariklub">Cari klub</option>
+          <option value="carialator">Cari peralatan olahraga</option></select
+        ><br /><br />
+        <label for="lokasi">Lokasi: </label>
+        <select name="lokasi" id="select_lokasi">
+          <option value="bekasi">Bekasi</option>
+          <option value="jakarta">Jakarta</option>
+          <option value="bandung">Bandung</option></select
+        ><br /><br />
+        <button class="btn_submit" onclick="submit()">Kirim Data !</button>
+      </div>
+    </center>
+
+    <script src="js/script_basket.js"></script>
+  </body>
+</html>
