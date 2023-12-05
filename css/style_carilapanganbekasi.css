@@ -1,0 +1,88 @@
+body {
+  background: #11101b;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  margin: 7%;
+}
+
+.container .card {
+  background-color: white;
+  padding: 20px;
+  width: 21vw;
+  border-radius: 4px;
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card img {
+  width: 80%;
+  height: 220px;
+}
+
+.card button {
+  background-color: #11101b;
+  padding: 10px;
+  color: white;
+  border-radius: 2px;
+  border: none;
+}
+
+.card button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 5.5%;
+  }
+
+  .container .card {
+    width: 37vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 4%;
+  }
+
+  .container .card {
+    width: 37vw;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 2%;
+  }
+
+  .container .card {
+    width: 37vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 10%;
+  }
+
+  .container .card {
+    width: 68vw;
+  }
+}
